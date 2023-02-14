@@ -6,7 +6,7 @@
         {
             Console.WriteLine("User Registration Problem");
             Console.WriteLine("Enter the number");
-            Console.WriteLine("1.FirstName \n2.LastName \n3.ValidEmail \n4.PreDefinedMobile \n5.Pre-DefinedPassRule1 \n6.Pre-DefinedPassRule2 \n7.NumericNumRule \n9.exit");
+            Console.WriteLine("1.FirstName \n2.LastName \n3.ValidEmail \n4.PreDefinedMobile \n5.Pre-DefinedPassRule1 \n6.Pre-DefinedPassRule2 \n7.NumericNumRule \n8.SpecialCharacter \n9.exit");
             int choice = Convert.ToInt32(Console.ReadLine());
             
             switch (choice)
@@ -31,6 +31,9 @@
                     break;
                 case 7:
                     NumericNumRule3.NumericRule3();
+                    break;
+                case 8:
+                    SpecialCharacterRule4.SpecialChar4();
                     break;
                 default:
                     Console.WriteLine("Please Enter the option from Above");
