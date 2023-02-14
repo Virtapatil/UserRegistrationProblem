@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace UserRegistrationProblem
 {
-    internal class ValidEmail
+    internal class PreDefinedMobileFormat
     {
-        public static void ValidEmailId()
+        public static void PreDefMobile()
         {
-            string pattern = "^([a-zA-Z0-9_]+)@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.)$";
-            string[] input = { "virtapatil58827@gmail.com", "", "11", "vbp", "ohk" };
+            string pattern = "^[0-9]{2}[ ]?[0-9]{10}$";
+            string[] input = { "913 7709523216", "91 77778898673", "8208045041", "919921020082", "91 7709503216" };
             foreach (var data in input)
             {
                 Regex regexobj = new Regex(pattern);
